@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Kong - Ebook & Konten Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          @apply font-sans bg-gray-950 text-gray-200 leading-relaxed;
+        }
+        h1,
+        h2,
+        h3 {
+          @apply font-bold text-white;
+        }
+        h1 {
+          @apply text-4xl sm:text-5xl lg:text-6xl;
+        }
+        h2 {
+          @apply text-3xl sm:text-4xl;
+        }
+        h3 {
+          @apply text-2xl;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body style="font-family: 'Poppins', sans-serif">
+    <header class="bg-gray-900 min-h-screen flex items-center pt-24 pb-12">
+      <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-12">
+        <div class="text-center lg:text-left max-w-2xl">
+          <h1 class="text-kong-gold text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">TheKongs</h1>
+          <p class="text-xl lg:text-2xl mb-8">Pusat Ebook & Konten Digital untuk Belajar, Berkarya, dan Berpenghasilan.</p>
+          <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+            <a href="#produk" class="bg-yellow-300 text-gray-950 font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 hover:bg-kong-gold hover:shadow-xl hover:-translate-y-1 hover:scale-105">Lihat Koleksi Ebook</a>
+            <button onclick="openModal()" class="bg-transparent text-white font-semibold py-3 px-8 rounded-full border-2 border-white hover:bg-white hover:text-gray-950 transition-colors duration-300">Gabung Komunitas</button>
+          </div>
+        </div>
+        <div class="w-full max-w-sm lg:max-w-md">
+          <img src="asset/1.png" alt="Mockup Ebook The Kong" class="rounded-lg shadow-2xl" />
+        </div>
+      </div>
+    </header>
+
+    <section class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+        <div class="w-full lg:w-1/2">
+          <img src="asset\5.png" alt="Founder The Kong" class="rounded-lg shadow-xl w-full max-w-md mx-auto lg:mx-0" />
+        </div>
+        <div class="w-full lg:w-1/2 text-center lg:text-left">
+          <h2 class="text-kong-gold mb-6">Tentang Kami</h2>
+          <p class="text-lg">
+            TheKongs hadir sebagai wadah inovasi untuk generasi muda yang ingin terus belajar dan berkembang. Kami adalah self-publisher yang berdedikasi menciptakan ebook edukasi, panduan praktis, dan konten digital berkualitas tinggi.
+            Misi kami adalah memberdayakan Anda dengan pengetahuan yang relevan dan mudah diakses, membantu Anda meraih potensi maksimal dalam karir, bisnis, dan kehidupan sehari-hari.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-950">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="mb-12">Kenapa Memilih Kami?</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+            <i class="fas fa-book-open text-kong-gold text-4xl mb-4"></i>
+            <h3 class="mb-2">Bahasa Sederhana</h3>
+            <p>Materi disampaikan dengan bahasa yang mudah dimengerti, cocok untuk pemula sekalipun.</p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+            <i class="fas fa-lightbulb text-kong-gold text-4xl mb-4"></i>
+            <h3 class="mb-2">Materi Up-to-Date</h3>
+            <p>Konten kami terus diperbarui sesuai perkembangan tren dan kebutuhan pasar terkini.</p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+            <i class="fas fa-wallet text-kong-gold text-4xl mb-4"></i>
+            <h3 class="mb-2">Harga Terjangkau</h3>
+            <p>Dapatkan pengetahuan berkualitas tanpa harus menguras kantong.</p>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+            <i class="fas fa-mobile-alt text-kong-gold text-4xl mb-4"></i>
+            <h3 class="mb-2">Akses di Semua Perangkat</h3>
+            <p>Baca kapan saja, di mana saja, melalui smartphone, tablet, atau laptop Anda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="produk" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="mb-12">Koleksi Ebook Kami</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300">
+            <img src="asset\1.png" alt="Cover Ebook 1" class="w-full h-auto rounded-md mb-4 mx-auto" />
+            <h3 class="text-xl mb-2">Panduan Freelancer Pemula</h3>
+            <p class="text-sm text-gray-400 mb-4">Langkah-langkah memulai karir sebagai freelancer dari nol hingga dapat klien pertama.</p>
+            <button
+              onclick="openBuyModal('https://lynk.id/thekongs/yo486w5nogkv', 'https://play.google.com/store/books/freelancer')"
+              class="bg-kong-gold text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-yellow-300 transition-colors duration-300"
+            >
+              Beli Sekarang
+            </button>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300">
+            <img src="asset\2.png" alt="Cover Ebook 2" class="w-full h-auto rounded-md mb-4 mx-auto" />
+            <h3 class="text-xl mb-2">50 Ide Konten Viral</h3>
+            <p class="text-sm text-gray-400 mb-4">Rahasia membuat konten yang disukai algoritma dan menarik banyak audiens.</p>
+            <button
+              onclick="openBuyModal('https://lynk.id/thekongs/9kj4170m5q43', 'https://play.google.com/store/books/freelancer')"
+              class="bg-kong-gold text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-yellow-300 transition-colors duration-300"
+            >
+              Beli Sekarang
+            </button>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300">
+            <img src="asset\3.png" alt="Cover Ebook 3" class="w-full h-auto rounded-md mb-4 mx-auto" />
+            <h3 class="text-xl mb-2">Manajemen Waktu untuk Gen Z</h3>
+            <p class="text-sm text-gray-400 mb-4">Teknik produktivitas yang realistis dan mudah diterapkan di tengah kesibukan.</p>
+            <button
+              onclick="openBuyModal('https://lynk.id/thekongs/ernydq255kz1', 'https://play.google.com/store/books/freelancer')"
+              class="bg-kong-gold text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-yellow-300 transition-colors duration-300"
+            >
+              Beli Sekarang
+            </button>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-xl border border-gray-700 hover:scale-105 transition-transform duration-300">
+            <img src="asset\4.png" alt="Cover Ebook 4" class="w-full h-auto rounded-md mb-4 mx-auto" />
+            <h3 class="text-xl mb-2">Membangun Personal Branding</h3>
+            <p class="text-sm text-gray-400 mb-4">Cara menonjol di era digital dan membangun reputasi yang kuat.</p>
+            <button
+              onclick="openBuyModal('https://lynk.id/thekongs/l61jmgjpe3pn', 'https://play.google.com/store/books/freelancer')"
+              class="bg-kong-gold text-gray-950 font-semibold py-2 px-6 rounded-full hover:bg-yellow-300 transition-colors duration-300"
+            >
+              Beli Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-950">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="mb-12">Apa Kata Mereka?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700">
+            <img src="https://via.placeholder.com/80" alt="Avatar Salsabila" class="w-20 h-20 rounded-full mx-auto mb-4" />
+            <p class="text-xl italic text-white mb-4">"Ebooknya sangat membantu! Materinya ringkas tapi padat ilmu. Sangat worth it!"</p>
+            <h4 class="text-kong-gold font-semibold">- Salsabila, Mahasiswi</h4>
+          </div>
+          <div class="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700">
+            <img src="https://via.placeholder.com/80" alt="Avatar Ardiansyah" class="w-20 h-20 rounded-full mx-auto mb-4" />
+            <p class="text-xl italic text-white mb-4">"Panduan praktisnya langsung bisa saya terapkan. Bikin produktivitas naik drastis."</p>
+            <h4 class="text-kong-gold font-semibold">- Ardiansyah, Siswa Sma</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-900 text-center">
+      <div class="container mx-auto px-4">
+        <h2 class="text-kong-gold mb-4">Siap Mengembangkan Dirimu?</h2>
+        <p class="text-lg max-w-2xl mx-auto mb-8">Jelajahi koleksi ebook kami dan dapatkan ilmu yang akan mengubah cara kamu belajar dan berkarya!</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#produk" class="bg-yellow-300 text-gray-950 font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 hover:bg-kong-gold hover:shadow-xl hover:-translate-y-1 hover:scale-105">Lihat Koleksi Ebook</a>
+          <button onclick="openModal()" class="bg-transparent text-white font-semibold py-3 px-8 rounded-full border-2 border-white hover:bg-white hover:text-gray-950 transition-colors duration-300">Gabung Komunitas</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-10">
+      <div class="container mx-auto px-4 text-center text-gray-400">
+        <div class="flex flex-col sm:flex-row justify-center sm:justify-between items-center mb-6 gap-4">
+          <div class="flex gap-6 text-2xl">
+            <a href="https://www.instagram.com/zah_ijtarrhmn" class="text-white hover:text-kong-gold transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@graafika" class="text-white hover:text-kong-gold transition-colors duration-300"><i class="fab fa-tiktok"></i></a>
+            <a href="https://chat.whatsapp.com/GUozSbQBORWEC2bpeANDQy" class="text-white hover:text-kong-gold transition-colors duration-300"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/TheKongsAmbis" class="text-white hover:text-kong-gold transition-colors duration-300"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://lynk.id/thekongs/page/e-book" class="text-white hover:text-kong-gold transition-colors duration-300"><i class="fas fa-link"></i></a>
+            <a href="#" class="text-white hover:text-kong-gold transition-colors duration-300"><i class="fas fa-book-open"></i></a>
+          </div>
+          <div class="text-sm">
+            <p>Email: <a href="mailto:zahranijtarr@gmail.com" class="hover:text-kong-gold">TheKongs@gmail.com</a></p>
+          </div>
+        </div>
+        <p class="text-sm border-t border-gray-700 pt-6 mt-6">&copy; 2025 TheKongs. All rights reserved.</p>
+      </div>
+    </footer>
+    <div id="modal-komunitas" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 hidden">
+      <div class="bg-gray-800 p-8 rounded-lg shadow-xl max-w-sm w-full mx-4 relative">
+        <button onclick="closeModal()" class="absolute -top-3 -right-3 text-white bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-700 transition-colors">
+          <i class="fas fa-times text-sm"></i>
+        </button>
+
+        <h3 class="text-white text-xl font-bold text-center mb-6">Gabung Komunitas The Kong</h3>
+        <p class="text-gray-400 mb-6 text-center">Pilih platform yang kamu suka untuk terhubung dengan kami!</p>
+        <div class="space-y-4">
+          <a href="https://t.me/TheKongsAmbis" target="_blank" class="block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition-colors text-center">
+            <i class="fab fa-telegram-plane mr-2"></i>Gabung di Telegram
+          </a>
+          <a href="https://chat.whatsapp.com/GUozSbQBORWEC2bpeANDQy" target="_blank" class="block bg-green-500 text-white font-semibold py-3 px-6 rounded-full hover:bg-green-600 transition-colors text-center">
+            <i class="fab fa-whatsapp mr-2"></i>Gabung di WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="modal-beli" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 hidden">
+      <div class="bg-gray-800 p-8 rounded-lg shadow-xl max-w-sm w-full mx-4 relative">
+        <button onclick="closeBuyModal()" class="absolute -top-3 -right-3 text-white bg-gray-600 rounded-full w-8 h-8 flex items-center justify-center hover:bg-gray-700 transition-colors">
+          <i class="fas fa-times text-sm"></i>
+        </button>
+
+        <h3 class="text-white text-xl font-bold text-center mb-6">Pilih Platform Pembelian</h3>
+        <p class="text-gray-400 mb-6 text-center">Dapatkan ebook ini melalui platform favoritmu!</p>
+        <div class="space-y-4">
+          <a
+            id="lynk-link"
+            href="https://lynk.id/thekongs/page/e-book"
+            target="_blank"
+            class="block bg-[#007BFF] text-white font-semibold py-3 px-6 rounded-full hover:opacity-80 transition-opacity text-center flex items-center justify-center"
+          >
+            <i class="fas fa-link mr-2"></i> Beli di Lynk
+          </a>
+          <a id="google-books-link" href="#" target="_blank" class="block bg-[#4285F4] text-white font-semibold py-3 px-6 rounded-full hover:opacity-80 transition-opacity text-center flex items-center justify-center">
+            <i class="fas fa-book-open mr-2"></i> Beli di Google Books
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openModal() {
+        document.getElementById("modal-komunitas").classList.remove("hidden");
+      }
+
+      function closeModal() {
+        document.getElementById("modal-komunitas").classList.add("hidden");
+      }
+
+      // Menutup modal jika area di luar modal diklik
+      document.getElementById("modal-komunitas").addEventListener("click", function (event) {
+        if (event.target === this) {
+          closeModal();
+        }
+      });
+      // Fungsi baru untuk modal pembelian
+      function openBuyModal(lynkUrl, googleBooksUrl) {
+        document.getElementById("modal-beli").classList.remove("hidden");
+        document.getElementById("lynk-link").href = lynkUrl;
+        document.getElementById("google-books-link").href = googleBooksUrl;
+      }
+
+      function closeBuyModal() {
+        document.getElementById("modal-beli").classList.add("hidden");
+      }
+
+      document.getElementById("modal-beli").addEventListener("click", function (event) {
+        if (event.target === this) {
+          closeBuyModal();
+        }
+      });
+    </script>
+  </body>
+</html>
